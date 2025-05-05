@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Lightbox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS -->
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">Image Gallery</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" data-img="image1.jpg">
+                <img src="image1.jpg" class="img-fluid" alt="Image 1">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" data-img="image2.jpg">
+                <img src="image2.jpg" class="img-fluid" alt="Image 2">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" data-img="image3.jpg">
+                <img src="image3.jpg" class="img-fluid" alt="Image 3">
+            </a>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="modal fade" id="lightbox" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img id="lightbox-img" src="" class="img-fluid" alt="Lightbox Image">
+                <div class="lightbox-controls">
+                    <button id="prev" class="btn btn-secondary">Previous</button>
+                    <button id="next" class="btn btn-secondary">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script> <!-- Your custom JavaScript -->
+</body>
+</html>
